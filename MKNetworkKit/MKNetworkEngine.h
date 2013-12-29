@@ -302,6 +302,8 @@
  */
 - (void) cancelAllOperations;
 
+@property (copy, nonatomic) NSDictionary *customHeaders;
+
 /*!
  *  @abstract HostName of the engine
  *  @property readonlyHostName

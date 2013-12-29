@@ -44,9 +44,7 @@
 
 @property (copy, nonatomic) NSString *hostName;
 @property (strong, nonatomic) Reachability *reachability;
-@property (copy, nonatomic) NSDictionary *customHeaders;
 @property (assign, nonatomic) Class customOperationSubclass;
-
 @property (nonatomic, strong) NSMutableDictionary *memoryCache;
 @property (nonatomic, strong) NSMutableArray *memoryCacheKeys;
 @property (nonatomic, strong) NSMutableDictionary *cacheInvalidationParams;
