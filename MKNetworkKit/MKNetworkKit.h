@@ -64,15 +64,15 @@
 #define ALog(fmt, ...) {NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);};
 #endif
 
-#import "NSAlert+MKNetworkKitAdditions.h"
-#import "NSDictionary+RequestEncoding.h"
-#import "NSDate+RFC1123.h"
-#import "NSData+MKBase64.h"
-#import "UIImageView+MKNetworkKitAdditions.h"
+#import <MKNetworkKit/NSString+MKNetworkKitAdditions.h>
+#import <MKNetworkKit/NSDictionary+RequestEncoding.h>
+#import <MKNetworkKit/NSDate+RFC1123.h>
+#import <MKNetworkKit/NSData+MKBase64.h>
+#import <MKNetworkKit/UIImageView+MKNetworkKitAdditions.h>
 #if TARGET_OS_IPHONE
-#import "UIAlertView+MKNetworkKitAdditions.h"
+#import <MKNetworkKit/UIAlertView+MKNetworkKitAdditions.h>
 #elif TARGET_OS_MAC
-#import "NSAlert+MKNetworkKitAdditions.h"
+#import <MKNetworkKit/NSAlert+MKNetworkKitAdditions.h>
 #endif
 
 #import "Reachability/Reachability.h"
